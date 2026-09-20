@@ -19,7 +19,8 @@ cmake --build build -j
 Tool: https://github.com/gcovr/gcovr
 
 ```bash
-gcovr -r ../ .  --gcov-ignore-parse-errors --exclude-noncode-lines --exclude-unreachable-branches --exclude-throw-branches --gcov-ignore-errors=all \
+gcovr -r ../ .  --gcov-ignore-parse-errors --exclude-noncode-lines \
+                --exclude-unreachable-branches --exclude-throw-branches --gcov-ignore-errors=all \
                 --html-details=yes \
                 --html=coverage/index.html
 ```
